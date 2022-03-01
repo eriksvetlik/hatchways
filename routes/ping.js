@@ -2,6 +2,7 @@ const pingRouter = require("express").Router();
 const fetch = (...args) =>
   import("node-fetch").then(({ default: fetch }) => fetch(...args));
 
+// GET /api/ping
 pingRouter.get("/", (req, res) => {
   try {
     res
