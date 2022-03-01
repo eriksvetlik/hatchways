@@ -10,6 +10,8 @@ app.use(express.json());
 
 app.use("/api", api);
 
-app.listen(PORT, () => {
+const server = app.listen(PORT, () => {
   console.log(`listening at http://localhost:${PORT}`);
 });
+
+module.exports = server;
