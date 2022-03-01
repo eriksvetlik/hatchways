@@ -2,7 +2,7 @@
 
 # Description
 
-In this assessment, our task was to write a simple backend JSON API to fetch data from https://api.hatchways.io/assessment/blog/posts.
+In this assessment, our task was to write a backend JSON API to fetch data from https://api.hatchways.io/assessment/blog/posts.
 
 The API has the following routes:
 
@@ -30,11 +30,11 @@ Response status code: `200`
 
 ### Query Parameters
 
-| Syntax    | Type              | Description                                 | Default | Example      |
-| --------- | ----------------- | ------------------------------------------- | ------- | ------------ |
-| tags      | String (required) | A comma separated list of tags.             | N/A     | science,tech |
-| sortBy    | String (optional) | sort posts by id, reads, likes, popularity. | id      | popularity   |
-| direction | String (optional) | direction for sorting by desc, asc          | asc     | asc          |
+| Syntax    | Type              | Description                                | Default | Example      |
+| --------- | ----------------- | ------------------------------------------ | ------- | ------------ |
+| tags      | String (required) | a comma separated list of tags             | N/A     | science,tech |
+| sortBy    | String (optional) | sort posts by id, reads, likes, popularity | id      | popularity   |
+| direction | String (optional) | direction for sorting by desc, asc         | asc     | asc          |
 
 ### Successful Response
 
@@ -113,7 +113,3 @@ JavaScript | Node.js
 ### PORT
 
 `3000`
-
-# Link
-
-[Video demonstration](https://drive.google.com/file/d/1lQjJRL8ZPHF29JJ15PBHE220OQJSzi-L/view?usp=sharing)
