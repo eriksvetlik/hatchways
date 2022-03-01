@@ -10,6 +10,13 @@ postsRouter.get("/:tag/:sortBy?/:direction?", async (req, res) => {
   const directionParams = ["asc", "desc", undefined];
 
   // send error if entered sortBy does not match valid sortBys
+  if (tag === undefined) {
+    return res.status(400).send({
+      error: "tag parameter is required",
+    });
+  }
+
+  // send error if entered sortBy does not match valid sortBys
   if (!sortByParams.includes(sortBy)) {
     return res.status(400).send({
       error: "sortBy parameter is invalid",
