@@ -5,9 +5,7 @@ const fetch = (...args) =>
 // GET /api/ping
 pingRouter.get("/", (req, res) => {
   try {
-    res
-      .status(200)
-      .send({ success: true, "Response status code:": res.statusCode });
+    res.status(200).send({ success: true });
   } catch (error) {
     console.log(error);
   }
