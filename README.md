@@ -66,7 +66,7 @@ Response body (JSON):
 
 ```
 {
-"error": "Tags parameter is required"
+"error": "tags parameter is required"
 }
 ```
 
