@@ -36,6 +36,10 @@ Response status code: `200`
 | sortBy    | String (optional) | sort posts by id, reads, likes, popularity | id      | popularity   |
 | direction | String (optional) | direction for sorting by desc, asc         | asc     | asc          |
 
+### Example
+
+`GET /api/posts/tech,politics/likes/desc`
+
 ### Successful Response
 
 Response body (JSON):
